@@ -29,24 +29,13 @@ form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   try {
-        await registerSW();
-const stockSW = "/uv/sw.js";
-const swAllowedHostnames = ["localhost", "127.0.0.1"];
+    await registerSW();
+  } catch (err) {
+    error.textContent = "Failed to register service worker.";
+    errorCode.textContent = err.toString();
+    throw err;
+  }
 
-  async function registerSW() {
-                if (!navigator.serviceWorker) {
-                if (
-                  location.protocol !== "https:" &&
-                  !swAllowedHostnames.includes(location.hostname)
-                )
-                  throw new Error("Service workers cannot be registered without https.");
-                
-                throw new Error("Your browser doesn't support service workers.");
-                }
-                
-                await navigator.serviceWorker.register(stockSW);
-                }
-addEventListener("DOMContentLoaded", async (event) => {
-await registerSW();
-
+  const url = search(address.value, searchEngine.value);
+  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
