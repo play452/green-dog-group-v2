@@ -1,4 +1,4 @@
-var cacheName = 'TIWcog';
+var cacheName = 'gdg Unblocker';
 var filesToCache = [
   '/js/sw.js'
 ];
