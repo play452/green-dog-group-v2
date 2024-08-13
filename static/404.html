@@ -30,9 +30,25 @@
       <p>sorry green dog group is prob broken rn.</p>
       <p id="uv-error"></p>
       <code id="uv-error-code"></code>
-      <button id="regesterSW" value="Register service worker">
-        Register ServiceWorker
-      </button>
+<button id="registerSW" value="Register service worker" onclick="registerServiceWorker()">
+  Register ServiceWorker
+</button>
+
+<script>
+  async function registerServiceWorker() {
+    try {
+      await registerSW();
+      location.reload();
+    } catch (error) {
+      console.error('Service Worker registration failed:', error);
+    }
+  }
+
+  async function registerSW() {
+    // Your service worker registration logic here
+  }
+</script>
+Q
     </div>
     <footer>
       <a
