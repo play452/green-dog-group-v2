@@ -1,13 +1,30 @@
-// The service worker registration script
-// This must run successfully before Ultraviolet is available to use
-const BARE_SERVER = "https://tomp.app"
+"use strict";
+/**
+ * Distributed with Ultraviolet and compatible with most configurations.
+ */
+const stockSW = "/static/uv-sw.js";
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./uv-sw.js', {
-    scope: '/service/'
-  }).then(() => {
-    console.log("Service worker registered successfully!")
-  })
+/**
+ * List of hostnames that are allowed to run serviceworkers on http:
+ */
+const swAllowedHostnames = ["localhost", "127.0.0.1"];
 
-  // BareMux.SetTransport("BareMod.BareClient", BARE_SERVER);
+/**
+ * Global util
+ * Used in 404.html and index.html
+ */
+async function registerSW() {
+  if (
+    location.protocol !== "https:" &&
+    !swAllowedHostnames.includes(location.hostname)
+  )
+    throw new Error("Service workers cannot be registered without https.");
+
+  if (!navigator.serviceWorker)
+    throw new Error("Your browser doesn't support service workers.");
+
+  // Ultraviolet has a stock `sw.js` script.
+  await navigator.serviceWorker.register(stockSW, {
+    scope: __uv$config.prefix,
+  });
 }
