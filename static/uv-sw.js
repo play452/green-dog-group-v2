@@ -1,5 +1,5 @@
 importScripts("/static/uv/uv.sw.js");
 
-const sw = new regesterSW();
+const sw = new UVServiceWorker();
 
 self.addEventListener("fetch", (event) => event.respondWith(sw.fetch(event)));
