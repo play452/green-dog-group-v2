@@ -34,6 +34,7 @@
     position: absolute;
     width: 100%;
     height: 99.7%;
+    background-color: #ffa500;
     background-image: url('https://x96.com/wp-content/uploads/2020/10/greenpuppy.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +95,7 @@ body {
 
 /* Header */
 #header {
-    background-color: #000;
+    background-color: #ffa500;
     padding: 20px;
     text-align: center;
 }
@@ -183,7 +184,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
     height: 15px;
-    background-color: #000;
+    background-color: #ffa500;
     padding-top: 7.5px;
     padding-bottom: 10px;
     text-align: center;
@@ -246,4 +247,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
