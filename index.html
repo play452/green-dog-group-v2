@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <script src="./uv/uv.bundle.js"></script>
+  <script src="./uv/uv.config.js"></script>
+  <script src="./assets/register-sw.js"></script>
+  <script src="./assets/script.js" defer></script>
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -147,7 +151,7 @@ button:hover::before {
             
          <form id="uv-form"">
             <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+            <input type="text" class="searchBar" placeholder="Search or enter a link">
           </form>
           <div class="desc left-margin">
             <p id="uv-error"></p>
