@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type='image/x-icon';
+    link.rel='shortcut icon';
+	document.getElementsByTagName('head')[0].appendChild(link);
+    
+    
+    function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
+    function blank(){
+      (function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe);window.location.href="https://classrooom.google.com";})();
+          document.body.style.backgroundImage = `url('/static/bg.png')`
+
+    }
+</script>
+            </script>
+            <button onclick="blank();">about:blank</button>
+<button onclick="location.href='Apps.html'">
+  <a>apps</a>
+</button>
+<style>
+button {
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 20px 30px;
+  cursor: pointer;
+  perspective: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    320deg,
+    rgba(0, 140, 255, 0.678),
+    rgba(128, 0, 128, 0.308)
+  );
+  z-index: 1;
+  transition: background 3s;
+}
+
+button:hover::before {
+  animation: rotate 1s;
+  transition: all 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+</style>
+
+<button onclick="location.href='Games.html'">
+  <a>games</a>
+</button>
+<style>
+button {
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 20px 30px;
+  cursor: pointer;
+  perspective: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    320deg,
+    rgba(0, 140, 255, 0.678),
+    rgba(128, 0, 128, 0.308)
+  );
+  z-index: 1;
+  transition: background 3s;
+}
+
+button:hover::before {
+  animation: rotate 1s;
+  transition: all 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+</style>
+
+      <script src="https://code.jquery.com/jquery1.10.2.js"></script>
+<link rel="stylesheet" href="index.css">
+	       <meta charset="UTF-8">
+
+</head>
+<body>
+      <div id="header">
+         <img src="logo.gif" alt="logo">
+         <title>GDG V2</title>
+      </div>
+	       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <div id="content">
+         <h1>green dog group
+        <h3 placeholder="A proxy used to search the web privately" id="haha"></h3>
+
+		 
+         <h1></h1>
+
+            
+         <form id="uv-form"">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+          </form>
+          <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
+      </div>
+       <a href="https://discord.gg/yYFyg3c3r2"> 
+  <img src="logodiscord.png" alt=“discord” width=70 height=70> 
+           <a href="https://github.com/gdg-network/green-dog-group-v2"> 
+  <img src="logogithub.png" alt=“github” width=70 height=70>
+           <a href="https://www.youtube.com/@GreenDogGroup"> 
+  <img src="logoyoutube.png" alt=“youtube” width=70 height=70>
+            <a href="https://minecraft-pied.vercel.app/static/"> 
+  <img src="logominecraft.png" alt=“minecraft proxy (for my friend)” width=70 height=70> 
+</a>
+</a>
+      </div>
+      <script src="uv/uv.bundle.js" defer></script>
+      <script src="uv/uv.config.js" defer></script>
+      <script src="register-sw.js" defer></script>
+      <script src="search.js" defer></script>
+      <script src="index.js" defer></script>
+      <script type='text/javascript' src='//banddisordergraceless.com/c4/4a/c4/c44ac4c7bdf482ac97d9545605fb3c5e.js'></script>
+      <div id="footer">
+
+         <p>&copy; 2024 gdg-network (has Liam, Nick, Lucas, and ferret man).</p>
+      </div>
+   <script>
+    var haha = document.getElementById("haha");
+
+    function lmao() {
+        var lol = [
+            'Super cool site that displays sites!',
+            'Bypassing web filters since a long time ago.',
+            'TitaniumNetwork sucks, cry about it.',
+            'Do your homework.',
+            'Too slow? Host it yourself instead of complaining non-stop about your issues.',
+            'The voices in my head told me to finish this site.',
+            'Breaking every bone in your body since 1979.',
+            'If you see ads on this site, this idiot is making money off my stuff.',
+            'how do i type',
+            'What do I even put here?',
+            'yoooooooooooooooooooo!',
+            'gdg just started working again maybe?',
+            'idk how to tipe',
+            'I only made this bec i was bored',
+            'green dog group for dummies: Type in a URL below to access it.',
+            'Dear Teachers, This is TOTALLY a learning resource.',
+            'I got in trouble for this once.',
+            'Always check if a school chrome extension has a privacy policy, If not then you can punch your school administrators multiple times.',
+            'Cookie Clicker is useless, stop playing it.',
+            'How did this blow up again?',
+            'Legit every proxy be like  Copyright 2024 black nig.',
+            'Submit an issue on GitHub if something broke in green dog group. (If a website being used via gdg basically a skid breaks, not our problem)',
+            'Do people use this anymore?',
+            '*cricket noises*',
+            'i will change this every day today i had a muffin for breakfast',
+            'Do a barrel roll',
+            'ur mom',
+            'Remember kids, dont do drugs!',
+            'If your teacher blocks this web proxy I WILL PUNCH HER/HIM IN THE FACE',
+            'Moms spagetti.... SOO GOOD',
+            'Cosmo was Here',
+            'You Should Check Out My Friends Website! https://galaxy-nine-eta.vercel.app',
+            'Uh Oh Bill Ciphers Here RUN RUN NOW',
+            'GDG Is Cool',
+            'Give me a cookie NOW',
+            'Welcome To Weirdmageddon!',
+            'I Hope You Like This Proxy',
+            '我们会再次见面 不知道在哪里 不知道什么时候我们会在某个阳光明媚的日子再次见面',
+            'Dont DO it Stanley DONT',
+            'Who lives in a Pineapple Under The Sea?',
+            'Is Mayonnaise a Instrument?',
+            'School starts soon',
+            'August 26th...',
+            '蝾螈 我的时间已经到了燃烧我召唤我可能回归的古老力量',
+            'Access granted. Enjoy your freedom!',
+            'Who needs math when you have this site?',
+            'Your secret is safe with us.',
+            'Welcome to the land of the unblocked!',
+            'No more boring classes, just endless fun!',
+            'The teacher won’t know what hit them.',
+            'Procrastination station, all aboard!',
+            'School just got a little more interesting.',
+            'Bypassing boredom since forever.',
+            'Learning? More like gaming!',
+            'Unlock the fun, one click at a time.',
+            'Homework? What homework?',
+            'Your escape from the mundane.',
+            'The ultimate student survival tool.',
+            'Shhh… don’t tell the teacher!',
+            'Outsmart the school filters, every time.',
+            'Because everyone needs a break.',
+            'Your online oasis in a desert of rules.',
+            'Disguised as education, but so much more.',
+            'Who said school can’t be fun?',
+            'Making school bearable, one click at a time.',
+            'Unblocked and unstoppable.',
+            'Just a harmless little site, right?',
+            'Top secret: Unblock your world.',
+            'Because study breaks are necessary.',
+            'The best-kept secret in the school.',
+            'Stealth mode activated!',
+            'More than just a website, it’s a movement.',
+            'This site is cooler than your math teacher.',
+            'No blocks can hold us back.',
+            'Where fun and freedom meet.',
+            'Your gateway to unrestricted fun.',
+            'School-approved (just kidding).',
+            'Access all areas—no permissions needed.',
+            'The school’s worst-kept secret.',
+            'The cure for classroom boredom.',
+            'When education meets entertainment.',
+            'Not just another school site.',
+            'Stealth surfing, perfected.',
+            'Your digital hideout.',
+            'Learning just took a back seat.',
+            'The antidote to school blues.',
+            'Class dismissed, fun allowed!',
+            'The rebel’s guide to surviving school.',
+            'Unblocked and loving it.',
+            'Because you deserve a break.',
+            'Making school a bit more bearable.',
+            'Get unblocked, stay entertained.',
+            'The unblocked site your teacher warned you about.',
+            'Keep calm and stay unblocked.',
+            'Im Lovin It',
+            'Ba Ba Ba Ba Baaaa',
+            'Is This The Mcdonalds Interview?',
+            'Hello? Is anyone there?'
+        ];
+
+        var hehe = Math.floor(Math.random() * lol.length);
+        haha.textContent = lol[hehe];
+    }
+
+    lmao(); // Call the function to display a random sentence
+</script>
+
+
+  
+	    
+		   
+  </script>
+		       <div class="cursor">
+        <div class="planet"></div>
+    </div>
+<script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 30,
+                    "density": {
+                        "enable": true,
+                        "value_area": 750
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 7
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 10,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 20,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "top",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+	   </body>   
+	   </html>
