@@ -135,8 +135,60 @@ button:hover::before {
 <link rel="stylesheet" href="css/index.css">
 	       <meta charset="UTF-8">
 
+<style>
+  .context-menu {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency using the alpha value */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    display: none; /* Hide the menu initially */
+  }
+  .context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .context-menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 10px;
+  }
+  .context-menu ul li a:hover {
+    background-color: #f0f0f0;
+  }
+</style>
 </head>
 <body>
+
+<div id="contextMenu" class="context-menu">
+  <ul>
+    <li><a href="blank()">About:Blank Cloak</a></li>
+  </ul>
+</div>
+
+<script>
+  // JavaScript to handle right-click event and show the context menu
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    var contextMenu = document.getElementById("contextMenu");
+    contextMenu.style.display = 'block';
+    contextMenu.style.left = event.pageX + 'px';
+    contextMenu.style.top = event.pageY + 'px';
+  });
+
+  // Hide the context menu when clicking elsewhere
+  document.addEventListener('click', function(event) {
+    var contextMenu = document.getElementById("contextMenu");
+    if (contextMenu.style.display === 'block') {
+      contextMenu.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
       <div id="header">
          <img src="./img/logo.gif" alt="logo">
          <title>GDG V2</title>
